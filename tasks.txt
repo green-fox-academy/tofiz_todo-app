@@ -1,0 +1,4 @@
+0 learn to code
+1 read the styleguide
+1 watch the news
+0 join to team
