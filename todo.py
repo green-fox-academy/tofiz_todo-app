@@ -1,5 +1,5 @@
 import sys
-sys.argv
+argument = sys.argv
 
 
 print("Command Line Todo application \n=============================\n \n"
@@ -7,7 +7,7 @@ print("Command Line Todo application \n=============================\n \n"
         "Command line arguments: \n -l   Lists all the tasks \n" ,
         "-a   Adds a new task \n -r   Removes an task \n -c   Completes an task")
 
-argument = input()
+
 
 
 def argument_reader(arg):
@@ -17,7 +17,9 @@ def argument_reader(arg):
         print("Hey, use the given arguments")
 
 def list_of_tasks():
+    # tasks = open("tasks.txt", "r")
     tasks = [{'checked',"learn to code"}, {'unchecked',"read the styleguide"}, {'unchecked',"watch the news"}]
-    print(tasks) 
+    for i in range(len(tasks)):
+        print(tasks[i])
 
-argument_reader(argument)
+argument_reader(argument[1])
